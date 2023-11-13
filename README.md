@@ -43,18 +43,19 @@ dotnet build
 dotnet run
 ```bash
 
-Usage
+## Usage
 
 Explain how users can interact with your API. Provide examples of API requests and responses.
 
 http
-
+```
 GET /api/FreelanceUser/1
+'''bash
 
 Response:
 
 json
-
+bash```
 {
   "Id": 1,
   "Username": "john_doe",
@@ -63,18 +64,19 @@ json
   "Skillsets": ["C#", "ASP.NET", "Web Development"],
   "Hobby": ["Reading", "Gaming"]
 }
+```bash
 
-API Endpoints
+## API Endpoints
 
 Document the available API endpoints, their methods, and expected inputs/outputs.
 
-    GET /api/FreelanceUser/{id}: Get a specific user.
-    GET /api/FreelanceUser: Get all users.
-    POST /api/FreelanceUser: Register a new user.
-    PUT /api/FreelanceUser/{id}: Update an existing user.
-    DELETE /api/FreelanceUser/{id}: Delete a user.
+    (GET [/api/FreelanceUser/{id}]: Get a specific user.
+    (GET) [/api/FreelanceUser]: Get all users.
+    (POST) [/api/FreelanceUser]: Register a new user.
+    (PUT) [/api/FreelanceUser/{id}]: Update an existing user.
+    (DELETE) [/api/FreelanceUser/{id}]: Delete a user.
 
-Configuration
+## Configuration
 
 Explain any configuration settings or environment variables that users might need to set.
 
