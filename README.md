@@ -35,8 +35,8 @@ set up and run your project locally. Include prerequisites and step-by-step inst
 # Clone the repository
 git clone https://github.com/mohdazidi/ASPCoreFreelance.git
 
-# Change to project directory
-cd your-project
+# project directory
+download 2 (CDNUserMgt & CDNUserMgtWeb) folder open project solution in CDNUserMgt folder through Visual Studio 2022 and above. 
 
 # Build and run the project
 dotnet build
