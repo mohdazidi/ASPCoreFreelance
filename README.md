@@ -1,7 +1,7 @@
 # ASPCoreFreelance
-# Your Project Name
 
-Short description or tagline about your project.
+in this repository created for Etiqa interview. This WebApi was build using C#, ASP.Net Core 
+
 
 ## Table of Contents
 
@@ -11,29 +11,29 @@ Short description or tagline about your project.
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
-Briefly introduce your project, its purpose, and what it aims to achieve.
+A fictional company, CDN - Complete Developer Network is going to build a list of freelancers.
+Such that they could have a directory of contact get people for their job.
 
 ## Features
 
-Highlight the key features of your project.
+Key features of this project.
 
-- CRUD operations for Freelance User information.
-- MySQL database connectivity.
-- RESTful API design.
-- Error handling and logging.
+- Support CRUD operations for Freelance User information.
+- connect to MySQL database.
+- Net Core RESTful API design with Swagger.
+- Error handling and logging to specific log file.
 
 ## Getting Started
 
-Provide instructions on how to set up and run your project locally. Include prerequisites and step-by-step instructions.
+set up and run your project locally. Include prerequisites and step-by-step instructions.
 
-```bash
+```
 # Clone the repository
-git clone https://github.com/yourusername/your-project.git
+git clone https://github.com/mohdazidi/ASPCoreFreelance.git
 
 # Change to project directory
 cd your-project
@@ -41,43 +41,56 @@ cd your-project
 # Build and run the project
 dotnet build
 dotnet run
-```bash
+
+# run cdnusermgmt.sql in MySQL database.
+
+```
 
 ## Usage
 
-Explain how users can interact with your API. Provide examples of API requests and responses.
-
-http
+this application can be interact with API through Swagger.  API requests and responses.
 ```
-GET /api/FreelanceUser/1
-'''bash
+https://localhost:7019/](https://localhost:7019/swagger/index.html
+```
+
+example http
+```
+GET https://localhost:7019/api/FreelanceUser/1
+```
 
 Response:
 
-json
-bash```
+FreelanceUser json sample
+```
 {
-  "Id": 1,
   "Username": "john_doe",
   "Mail": "john.doe@example.com",
   "PhoneNumber": "1234567890",
   "Skillsets": ["C#", "ASP.NET", "Web Development"],
   "Hobby": ["Reading", "Gaming"]
 }
-```bash
+```
 
 ## API Endpoints
 
-Document the available API endpoints, their methods, and expected inputs/outputs.
+Available API endpoints, methods, and expected inputs/outputs.
 
-    (GET [/api/FreelanceUser/{id}]: Get a specific user.
-    (GET) [/api/FreelanceUser]: Get all users.
-    (POST) [/api/FreelanceUser]: Register a new user.
-    (PUT) [/api/FreelanceUser/{id}]: Update an existing user.
-    (DELETE) [/api/FreelanceUser/{id}]: Delete a user.
+    GET https://localhost:7019//api/User/GetUser  input : UserName (string) --  Get a specific user.
+    GET https://localhost:7019//api/User/ListAllUser no input -- Get all users.
+    POST https://localhost:7019//api/User/RegisterUser input : FreelanceUser JSON -- Register a new user.
+    PUT https://localhost:7019//api/User/UpdateUser input : FreelanceUser -- Update an existing user.
+    DELETE https://localhost:7019//api/User/DeleteUser input : Username -- Delete a user.
 
 ## Configuration
 
-Explain any configuration settings or environment variables that users might need to set.
-
+please change configuration settings.
+```
     Database Connection String: Set the DefaultConnection in appsettings.json.
+    "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;Database=cdnusermgmt;User=root;Password='';",
+      "backupConnection": "Server=localhost;Port=3306;Database=YourDatabaseName;User=root;Password='';"
+    }
+
+  
+
+```
