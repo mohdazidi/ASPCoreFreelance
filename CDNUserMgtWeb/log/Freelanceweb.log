@@ -1,0 +1,19 @@
+13/11/2023 11:19:03 AM: Format of the initialization string does not conform to specification starting at index 0.
+13/11/2023 12:23:09 PM: Could not find specified column in results: PhoneNumber
+13/11/2023 12:25:31 PM: Could not find specified column in results: Skillsets
+13/11/2023 12:25:32 PM: Could not find specified column in results: Skillsets
+13/11/2023 12:25:33 PM: Could not find specified column in results: Skillsets
+13/11/2023 12:25:35 PM: Could not find specified column in results: Skillsets
+13/11/2023 12:25:36 PM: Could not find specified column in results: Skillsets
+13/11/2023 12:25:43 PM: Could not find specified column in results: Skillsets
+13/11/2023 12:26:13 PM: Unexpected character encountered while parsing value: C. Path '', line 0, position 0.
+13/11/2023 12:27:29 PM: Invalid character after parsing property name. Expected ':' but got: ,. Path '', line 1, position 23.
+13/11/2023 12:27:30 PM: Invalid character after parsing property name. Expected ':' but got: ,. Path '', line 1, position 23.
+13/11/2023 12:27:38 PM: Invalid character after parsing property name. Expected ':' but got: ,. Path '', line 1, position 23.
+ 13/11/2023 12:33:49 PM :  do read all user
+13/11/2023 12:33:49 PM: Invalid character after parsing property name. Expected ':' but got: ,. Path '', line 1, position 23.
+ 13/11/2023 12:34:53 PM :  do read all user
+13/11/2023 12:34:53 PM: Invalid property identifier character: [. Path '', line 1, position 1.
+ 13/11/2023 12:34:54 PM :  do read all user
+13/11/2023 12:34:54 PM: Invalid property identifier character: [. Path '', line 1, position 1.
+ 13/11/2023 12:35:31 PM :  do read all user
